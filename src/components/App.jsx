@@ -1,16 +1,18 @@
-export const App = () => {
+import User from './user';
+import user from '../gallary.json';
+
+export default function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      {user.map(user => (
+        <User
+        key={user.id}
+        url = {user.url}
+        name={user.name}
+        title={user.title}
+        price={user.price}
+      />
+      ))}
     </div>
   );
 };

@@ -11,6 +11,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./components/App";
 
 // const elem1 = React.createElement('span', {
 //   children: "Hello"
@@ -31,12 +32,12 @@ import ReactDOM from "react-dom";
 // const jsxElement = <div>'Hello world'</div>;
 // console.log(jsxElement);
 
-const elem1 = <span>Hello</span>;
-const elem2 = <span>World</span>
+// const elem1 = <span>Hello</span>;
+// const elem2 = <span>World</span>
 
-const jsxElem = <div>
-  {elem1}
-  {elem2}
-</div>
+// const jsxElem = <div>
+//   {elem1}
+//   {elem2}
+// </div>
 
-ReactDOM.render(jsxElem, document.querySelector('#root'));
+ReactDOM.render(<App />, document.querySelector('#root'));
