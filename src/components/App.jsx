@@ -1,18 +1,32 @@
-import User from './user';
-import user from '../gallary.json';
+import User from "./User";
+import usersList from "../gallary.json"
 
 export default function App() {
   return (
     <div>
-      {user.map(user => (
-        <User
-        key={user.id}
-        url = {user.url}
-        name={user.name}
-        title={user.title}
-        price={user.price}
+      <User
+        key={usersList[0].id}
+        // url={usersList[0].url}
+        // name={usersList[0].name}
+        title={usersList[0].title}
+        price={usersList[0].price}
       />
-      ))}
+
+       <User
+        key={usersList[1].id}
+        url={usersList[1].url}
+        name={usersList[1].name}
+        title={usersList[1].title}
+        price={usersList[1].price}
+      />
+
+       <User
+        key={usersList[2].id}
+        url={usersList[2].url}
+        name={usersList[2].name}
+        title={usersList[2].title}
+        price={usersList[2].price}
+      />
     </div>
-  );
-};
+  )
+}

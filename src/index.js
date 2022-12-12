@@ -3,15 +3,16 @@
 // import { App } from 'components/App';
 // import './index.css';
 
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
-
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import App from "./components/App";
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+<React.StrictMode>
+  <App />
+</React.StrictMode>);
+
+
 
 // const elem1 = React.createElement('span', {
 //   children: "Hello"
@@ -40,4 +41,4 @@ import App from "./components/App";
 //   {elem2}
 // </div>
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+// ReactDOM.render(<App />, document.querySelector('#root'));
