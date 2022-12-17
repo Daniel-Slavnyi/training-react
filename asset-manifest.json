@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/training-react/static/js/main.95925695.js",
+    "main.js": "/training-react/static/js/main.549e7972.js",
     "static/media/defaultIm.jpg": "/training-react/static/media/defaultIm.a2dadf8a438b2a42d331.jpg",
     "index.html": "/training-react/index.html",
-    "main.95925695.js.map": "/training-react/static/js/main.95925695.js.map"
+    "main.549e7972.js.map": "/training-react/static/js/main.549e7972.js.map"
   },
   "entrypoints": [
-    "static/js/main.95925695.js"
+    "static/js/main.549e7972.js"
   ]
 }
