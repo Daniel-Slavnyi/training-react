@@ -12,8 +12,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <App />
 </React.StrictMode>);
 
-
-
 // const elem1 = React.createElement('span', {
 //   children: "Hello"
 // });

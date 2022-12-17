@@ -1,8 +1,12 @@
 import { Component } from 'react';
 
 class Counter extends Component {
+  static defaultProps = {
+    initialValue: 0,
+  };
+
   state = {
-    value: 9,
+    value: this.props.initialValue,
   };
 
   handleIncrement = e => {

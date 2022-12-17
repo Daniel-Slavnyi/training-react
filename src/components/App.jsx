@@ -29,7 +29,7 @@ export default function App() {
         price={usersList[2].price}
       />
 
-      <Counter />
+      <Counter initialValue={9} />
     </div>
   );
 }
