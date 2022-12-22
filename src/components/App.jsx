@@ -7,6 +7,8 @@ import Counter from './Class';
 import Dropdown from './Dropdown/Dropdown';
 import ColorPicker from './ColorPicker/ColorPicker';
 import TodoList from './TodoList';
+import CicleOfLife from './CicleOfLife/CicleOfLife';
+import Modal from './Modal/Modal';
 
 const colorPickerOptions = [
   { label: 'red', color: '#F44336' },
@@ -35,6 +37,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
+        <Modal />
         <Dropdown />
 
         <ColorPicker options={colorPickerOptions} />
@@ -66,6 +69,8 @@ export default class App extends Component {
         <Counter initialValue={9} />
 
         <TodoList todos={this.state.todos} deleteTodo={this.deleteTodo} />
+
+        <CicleOfLife />
       </div>
     );
   }
