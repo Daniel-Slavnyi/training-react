@@ -10,6 +10,9 @@ import TodoList from './TodoList';
 import CicleOfLife from './CicleOfLife/CicleOfLife';
 import Modal from './Modal/Modal';
 import Pocemon from './Pocemon/Pocemon';
+import Hokie from './Hokie/Hokie';
+import ColorPickerByHook from './ColorPickerByHook/ColorPickerByHook';
+import CounterByHook from './CounterByHook/CounterByHook';
 
 const colorPickerOptions = [
   { label: 'red', color: '#F44336' },
@@ -74,6 +77,12 @@ export default class App extends Component {
         <CicleOfLife />
 
         <Pocemon />
+
+        <Hokie />
+
+        <ColorPickerByHook colors={colorPickerOptions} />
+
+        <CounterByHook />
       </div>
     );
   }
