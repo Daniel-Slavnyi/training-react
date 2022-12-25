@@ -9,6 +9,7 @@ import ColorPicker from './ColorPicker/ColorPicker';
 import TodoList from './TodoList';
 import CicleOfLife from './CicleOfLife/CicleOfLife';
 import Modal from './Modal/Modal';
+import Pocemon from './Pocemon/Pocemon';
 
 const colorPickerOptions = [
   { label: 'red', color: '#F44336' },
@@ -71,6 +72,8 @@ export default class App extends Component {
         <TodoList todos={this.state.todos} deleteTodo={this.deleteTodo} />
 
         <CicleOfLife />
+
+        <Pocemon />
       </div>
     );
   }
